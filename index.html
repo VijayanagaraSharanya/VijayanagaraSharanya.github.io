@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Store Analysis</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+       body {
+            background-color: #f8f9fa;
+            color: #000000;
+        }
+        h2{
+            text-align: center;
+        }
+        .carousel {
+            max-width: 800px; /* Set maximum width for the carousel */
+            margin: auto; /* Center the carousel */
+        }
+        .carousel-item img {
+            max-height: 400px; /* Limit image height */
+            width: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Ensure responsiveness */
+            margin: auto; /* Center the images */
+            display: block; /* Center the image in the carousel item */
+            overflow: hidden;
+        }
+        .header {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+             background-color: #0800ff; 
+             border-radius: 50%; 
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 40px; 
+             height: 40px; 
+            }
+        .carousel-control-prev {
+            left: -60px; /* Move slightly outside to the left */
+        }
+        .carousel-control-next {
+            right: -60px; /* Move slightly outside to the right */
+        } 
+        .dashboard
+        {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Super Store Sales Data Visualizations using PowerBI</h1>
+        <p>Explore the trends and insights from Super Store Sales <a href="https://github.com/VijayanagaraSharanya/SalesStoreAnalysis-BI/blob/main/SuperStore_sales.csv"> Dataset</a></p>
+    </div>
+
+    <!-- Carousel Structure -->
+    <div id="graphCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h2>Graph Showing Most Selected Ship Mode</h2>
+                <img src="images/most_selected_ship_mode.png" class="d-block w-300" alt="Graph 1">
+                <!-- <h2>Ultimate goal:</h2> -->
+                <p>Analyzing trends in shipping mode preferences over time could provide insights into shifting customer behavior and preferences. Regularly reviewing shipping mode performance will help inform logistics strategies and promotional efforts</p>
+                <h2> Analysis of the graph: </h2>
+                <p><b>The Standard Class</b> The Standard Class shipping mode has the highest sales volume, exceeding 1.4 million. This indicates that most customers prefer this shipping method, likely due to its balance of cost and delivery time</p>
+                <p><b>The Second Class</b> shipping mode accounts for a significant amount of sales, but it is notably less than Standard Class. This could imply that while customers are willing to opt for a slower delivery option, they still prioritize affordability</p>
+                <p><b>The First Class</b> shipping mode shows a moderate level of sales, while Same Day shipping has the least sales. This could suggest that customers are not inclined to pay for expedited shipping unless necessary.</p>
+                <h2>Insights gained and Steps to be followed:</h2>  
+                
+            
+                    <hr><b>Standard Class shipping </b> should continue to be the main focus due to its widespread use. This means that prompt delivery and effective logistics management are essential to its success. </br>
+                    <b>Marketing for Second Class:</b> Given that Second Class also contributes significantly to sales, marketing initiatives should highlight the advantages of this affordable choice in order to draw in more clients.<br>
+                    <b>Examine First Class and Same Day delivery: </b>Given that these delivery options have fewer sales, you could want to do research or customer surveys to find out what obstacles exist for these shipping options. Improving the value proposition for expedited delivery choices may persuade clients to select them.</p>      
+            
+                </div>   
+                
+                
+            <div class="carousel-item">
+                <h2>Graph Showing Sales as per Segment of people and Category of Product</h2>
+                <img src="images/sales_as_per_segment_and_cateogry.png" class="d-block w-300" alt="Graph 2">
+            </br>
+                <p>The pie chart suggests a healthy distribution of sales across the segments, with the Consumer and Corporate segments leading in total sales. Further analysis could be done to understand the reasons behind the sales distribution, such as customer behavior, product offerings, or market trends.</p>
+                <h2>Analysis of the graph: </h2>
+                <p><b>Consumer Segment:</b> The consumer segment seems to account for a sizable amount of overall sales, suggesting either large sales volume or robust demand in this category. 17.14% of all sales are displayed.</br>
+                    <b>Corporate category:</b> With 17.73% of total revenues, this category also makes a significant contribution. This implies that a significant portion of revenues come from business clients.</br>
+                    <b>Home Office Segment:</b> With 15.89% of total sales, the Home Office segment has the smallest share. In comparison to the other segments, this can suggest lower demand or a less concentrated marketing effort.
+                    
+                    </p>
+                    <hr>
+                    <h2> Insights Gained and Steps needs to be followed: </h2>
+                    <p>Given that the Home Office segment's sales proportion is lower than that of the Consumer and Corporate sectors, initiatives targeted at these two markets may be more successful.
+                        A balanced marketing strategy across all segments may also be advantageous, as the percentages show that each sector contributes considerably to overall sales.
+                        </p>
+                        
+            </div>
+            <div class="carousel-item">
+                <h2>Graph Showing Sales by customer name and category</h2>
+                <img src="images/sales_by_customer_name_and_category.png" class="d-block w-300" alt="Graph 3">
+                <br>
+                <p>Technology appears to be the dominant category in terms of total sales, followed by Office Supplies and Furniture.
+                    Furniture has the smallest overall sales compared to the other two categories.</p>
+                    <h2>Analysis of the graph: </h2>
+                    <p>Technology has a few customers with exceptionally high sales, potentially indicating the presence of large-scale projects or bulk purchases.
+                        Office Supplies shows a more balanced distribution of sales among customers, suggesting a more consistent demand pattern.
+                        Furniture has a relatively small number of customers with high sales, possibly due to the nature of furniture purchases (e.g., infrequent, high-value purchases)</p>
+                    <hr>
+                    <h2>Insights gained and Steps need to be followed:</h2>
+                    <p><b>Customer Segmentation:</b> Identifying distinct customer segments based on their purchasing behavior could provide valuable insights for targeted marketing and sales strategies.<br>
+                        <b>Product Performance:</b> Analyzing sales at the product level within each category could reveal best-selling items, slow-moving products, and opportunities for product optimization.<br>
+                        <b>Customer Lifetime Value:</b> Calculating customer lifetime value could help prioritize customer retention efforts and identify high-value customers.<br>
+                        <b>Sales Trends Over Time:</b> Analyzing sales data over time could identify seasonal patterns, growth trends, and potential anomalies</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Graph showing sales by product name</h2>
+                <img src="images/sales_by_product_name.png" class="d-block w-300" alt="Graph 4">
+                <br>
+                <p>Office Equipment (e.g., printers, copiers, binding machines) dominates the list of top-selling products.
+                    Furniture (e.g., chairs, tables) has a few products in the top ranks.</p>
+                    <h2>Analysis of the graph: </h2>
+                    <p>Canon imageCLASS MF7460 Monochrome Digital Laser Multifunction Copier is the clear leader in terms of sales, significantly outselling other products.
+                        Cisco TelePresence System EX90 Videoconferencing Unit and HON 5400 Series Task Chairs for Big and Tall also rank among the top-selling products.</p>
+                <hr>
+                <h2>Insights gained and steps need to be followed: </h2>
+                <p><b>Product Profitability:</b> Analyzing the profitability of each product could reveal which products contribute most to the overall business margin.<br>
+                    <b>Customer Preferences:</b> Understanding customer preferences for specific product features or brands could help guide product development and marketing efforts.<br>
+                    <b>Product Lifecycle Analysis:</b> Identifying products nearing the end of their lifecycle could help plan for product replacement or discontinuation.<br>
+                    <b>Market Trends:</b> Tracking sales trends for individual products can provide insights into market demand and competitive dynamics.</p>
+            </div>
+            <div class="carousel-item">
+                <h2>Graph showing sales by Year,Quarter and Month</h2>
+                <img src="images/sales_by_year_quarter_and_month.png" class="d-block w-300" alt="Graph 5">
+                <br>
+                <p>The chart shows a general upward trend in sales over the period from January 2015 to July 2018.
+                    There are fluctuations within this trend, indicating seasonal variations or other factors influencing sales.</p>
+                <h2>Analysis of the graph: </h2>
+                <p>The chart shows a general upward trend in sales over the period from January 2015 to July 2018.
+                    There are fluctuations within this trend, indicating seasonal variations or other factors influencing sales.</p> 
+                <hr>
+                <h2>Insights gained and Steps need to be followed: </h2>
+                <p><b>Correlation with External Factors:</b> Analyzing sales data in conjunction with economic indicators, industry trends, or marketing campaigns could identify factors driving sales fluctuations.<br>
+                    <b>Seasonal Forecasting:</b> Using historical sales data to forecast future sales based on seasonal patterns could help optimize inventory levels and marketing strategies.<br>
+                    <b>Trend Analysis:</b> Identifying underlying trends (e.g., exponential growth, linear growth) could provide insights into the long-term trajectory of sales.<br>
+                    <b>Event Analysis:</b> Investigating the impact of specific events (e.g., product launches, promotions, economic downturns) on sales could help understand causal relationships.</p>
+                
+            </div>
+            <div class="carousel-item">
+                <h2>Graph showing Trend in Sales over Years</h2>
+                <img src="images/trend_in_sales_over_years.png" class="d-block w-300" alt="Graph 6">
+                <p>The chart shows a clear upward trend in sales from 2015 to 2018.
+                    This indicates a positive growth in sales over the period.</p>
+                    <h2> Analysis of the graph:</h2>
+                    <p><b>2015: </b> Sales were at their highest point during this year.<br>
+                        <b>2016:</b> Sales experienced a significant drop compared to 2015.<br>
+                        <b>2017: </b>Sales showed a recovery from the previous year, but remained below 2015 levels.<br>
+                        <b>2018: </b> Sales reached a new peak, surpassing the 2015 high.</p>
+                <hr>
+                        <h2>Insights gained and Steps need to be followed</h2>
+                <p><b>Underlying Factors:</b> Investigate the reasons behind the sales drop in 2016 and the subsequent recovery. This could involve analyzing factors such as economic conditions, market trends, or company-specific initiatives.<br>
+                    <b>Growth Rate:</b> Calculate the growth rate between different years to identify periods of accelerated or decelerated growth. This can help assess the company's performance and identify areas for improvement.<br>
+                   <b> Future Projections:</b> Use the historical data to forecast future sales trends and develop growth strategies.<br>
+                    <b>Comparison with Industry Benchmarks:</b> Compare the sales growth of the company to industry averages or competitors to assess its relative performance.</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#graphCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#graphCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div>
+        <p class="dashboard">For more detailed interactive dashboard refer to this <a href="https://github.com/VijayanagaraSharanya/SalesStoreAnalysis-BI">powerBI report</a> dashbord</p>
+        </div>
+        <div>
+        <p style="text-align: center; color: #004f36;" >Made by V Sharanya, for any suggestions write <a href="sharanya.vijayanagara89@gmail.com">mail to</a></p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
